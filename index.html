@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empezando con HTML</title>
+</head>
+<body>
+    <header id="inicio" style="background-color: lightcoral; padding: 10px; text-align: center; font-size: xx-large; font-weight: 700; color: white;">
+        HTML
+    </header>
+    <section>
+        <h1 id="estructura" style="font-weight: bolder;">EMPEZANDO CON <span style="text-decoration:double underline; font-style: oblique;">HTML</span></h1>
+        <div>
+            <h2> 1. Estructura Básica del Documento HTML</h2>
+            <p>Este documento HTML tiene una estructura básicaa que incluye la declaración de DOCTYPE, etiquetas de metadatos y un título.</p>
+        </div>
+        <div>
+            <h2 style="color: aqua;">2. Encabezados y Propiedades del Texto</h2>
+            <h3 style="font-weight: bold;">Este es un texto en negrita.</h3>
+            <h3 style="font-weight: lighter;"> Este es un texto más fino.</h3>
+            <h3 style="font-style: italic;">Este es un texto en cursiva.</h3>
+            <h3 style="text-decoration: underline;">Este es un texto subrayado.</h3>
+            <h4 style="text-align: center; font-family: Verdana, Geneva, Tahoma, sans-serif;">Este es un texto en el medio y en otra fuente.</h4>
+            <h5 style="color: white;background-color: blue; padding: 10px; margin-right: 20%;">Este es un texto con fondo azul</h5>
+            <h6 style="color: red;">Este es un texto de color rojo.</h6>
+            
+        </div>
+        <div>
+            <h2> 3. Divisiones y Agrupación de Contenido</h2>
+            <div>
+                <h3>Sección 1</h3>
+                <p>Contenido de la primera sección agrupada en un div.</p>
+            </div>
+            <div>
+                <h3> Sección 2 </h3>
+                <p>Contenido de la segunda sección agrupada en un div.</p>
+            </div>
+        </div>    
+        <div>
+            <h2> 4. Enlaces y Listas</h2>
+            <h3>Visita nuestro <a href="https://github.com/macaepifani">sitio web</a> para más información</h3>
+            <h3> Enalces internos:</h3>
+            <ul>
+                <li> 
+                    <a href="#estructura" target="_self"> Ir a Estructuras </a>
+                </li>
+                <li>
+                    <a href="#multi" target="_self">Ir a Multimedia</a>
+                </li>
+                <li>
+                    <a href="#forms">Ir a Formulario</a>
+                </li>
+            </ul>
+            <h3>Lista desordenada</h3>
+            <ul>
+                <li>Primer item de una lista desordenada</li>
+                <li>Segundo item de una lista desordenada</li>
+            </ul>
+            <h3>Lista ordenada:</h3>
+            <ol>
+                <li>Primer item de una lista ordenada</li>
+                <li>Segundo item de una lista ordenada</li>
+            </ol>
+        </div>
+        <div>
+            <h2 id="multi">5. Elementos multimedia</h2>
+            <h3> IMAGEN</h3>
+                <img src="recursos/imgHTML.jpeg" alt="Esta es una imagen sobre el HTML">
+            <h3>VIDEO </h3>
+                <video src="recursos\InsVS.mp4" controls></video>
+            <h3>AUDIO</h3>
+                <audio style="width: 50%;" src="recursos\queen.mp4" controls></audio>
+        </div>
+        <div>
+            <h2 id="tablas"> 6. Tablas</h2>
+            <table style="border-collapse: collapse;">
+                <thead> 
+                    <tr style="border: 3px solid black;padding: 6px; text-align: left;">
+                        <th style="border: 3px solid black;padding: 6px; text-align: left;">Columna 1 </th>
+                        <th style="border: 3px solid black;padding: 6px; text-align: left;">Columna 2</th>
+                        <th style="border: 3px solid black;padding: 6px; text-align: left;">Columna 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="border: 3px solid black;padding: 6px; text-align: left;">
+                        <td style="border: 3px solid black;padding: 6px; text-align: left;">Celda 1.1</td>
+                        <td style="border: 3px solid black;padding: 6px; text-align: left;">Celda 1.2</td>
+                        <td style="border: 3px solid black;padding: 6px; text-align: left;">Celda 1.3</td>
+                    </tr>
+                    <tr style="border: 3px solid black;padding: 6px; text-align: left;">
+                        <td style="border: 3px solid black;padding: 6px; text-align: left;">Celda 2.1</td>
+                        <td style="border: 3px solid black;padding: 6px; text-align: left;">Celda 2.2</td>
+                        <td style="border: 3px solid black;padding: 6px; text-align: left;">Celda 2.3</td>
+                    </tr>
+                    <tr style="border: 3px solid black;padding: 6px; text-align: left;">
+                        <td style="border: 3px solid black;padding: 6px; text-align: left;" >Celda 3.1</td>
+                        <td style="border: 3px solid black;padding: 6px; text-align: left;">Celda 3.2</td>
+                        <td style="border: 3px solid black;padding: 6px; text-align: left;">Celda 3.3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <h2 id="forms">7. Formulario</h2>
+            <form action="">
+                <fieldset>
+                    <label for="">Nombre</label> 
+                        <input type="name">
+                    <label for="">Email</label> 
+                        <input type="email" placeholder="ejemplo@dominio.com">
+                    <label for="">Mensaje</label> 
+                        <textarea name="" id="" cols="20" rows="2"></textarea>
+                    <button style="align-items: center; padding: 5px;" type="submit">Enviar</button>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    <footer style="background-color: lightcoral; padding: 10px; text-align: center; font-size: large; font-weight: 500; margin-top: 50px;">
+        Gracias por llegar hasta el final, para volver al inicio presione <a href="#inicio">aquí</a>
+    </footer>
+    </>
+</body>
+</html>
